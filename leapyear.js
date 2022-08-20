@@ -31,4 +31,4 @@ function leapYear(year){
     }
 }
 
-leapYear(1900);  //write year here
+leapYear();  //write year here
