@@ -13,7 +13,7 @@ function leapYear(year){
             }
             else{
                 if (year % 4 == 0 || year % 400 == 0 ){
-                    if (year % 100 != 0){
+                    if (year % 100 != 0 || year % 400 == 0 ){
                         console.log(year + " is a Leap Year!!")
                     }
                     else{
@@ -31,4 +31,4 @@ function leapYear(year){
     }
 }
 
-leapYear();  //write year here
+leapYear(1900);  //write year here
