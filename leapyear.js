@@ -3,10 +3,10 @@ function leapYear(year){
     switch (yearDataType){
         case "number":
             if (year % 1 != 0 && year < 0){
-                console.log("Decimal and Minus number aren't allowed. Please input year valid year.");
+                console.log("Decimal and Minus number aren't allowed. Please input valid year.");
             }
             else if(year % 1 != 0){
-                console.log("Decimal number isn't allowed. Please input year valid year.");
+                console.log("Decimal number isn't allowed. Please input valid year.");
             }
             else if(year < 0) {
                 console.log("Minus number isn't allowed. Please input valid year.");
