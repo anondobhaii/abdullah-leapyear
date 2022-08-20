@@ -3,13 +3,13 @@ function leapYear(year){
     switch (yearDataType){
         case "number":
             if (year % 1 != 0 && year < 0){
-                console.log("Decimal and Minus number aren't allowed. Please input year with Integer Number(exp: 1972, 620,2 022 ..) ");
+                console.log("Decimal and Minus number aren't allowed. Please input year valid year.");
             }
             else if(year % 1 != 0){
-                console.log("Decimal number isn't allowed. Please input year with Integer Number(exp: 1972, 620,2 022 ..) ");
+                console.log("Decimal number isn't allowed. Please input year valid year.");
             }
             else if(year < 0) {
-                console.log("Minus number isn't allowed. Please input year with Integer Number(exp: 1972, 620, 2022 ..) ");
+                console.log("Minus number isn't allowed. Please input valid year.");
             }
             else{
                 if (year % 4 == 0){
@@ -26,7 +26,7 @@ function leapYear(year){
             }
             break;
         case "string": 
-            console.log("String isn't allowed. Please input year with Integer Number(exp: 1972, 620, 2022 ..) ")
+            console.log("String isn't allowed. Please input valid year.")
             break;
     }
 }
